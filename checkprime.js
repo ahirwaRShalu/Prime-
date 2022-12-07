@@ -1,12 +1,20 @@
-function checkPrime(num)
-{
- for(lrt i=0 ; i<=num ; i++)
-  {
-   if(num%i)
-   {
-    return true;
-   }
- }
- rteurn false;
+function checkPrime(num){
+let counter=0;
+for (let i=1; i<=num; i++){
+if(num%i == 0){
+  counter++;
 }
-checkPrime(13);
+}
+if(counter == 2){
+  return true;
+}
+return false;
+}
+
+let ans= checkprime(13);
+
+if(ans == true){
+   console.log("prime")
+}else{
+console.log("Not Prime")
+}
