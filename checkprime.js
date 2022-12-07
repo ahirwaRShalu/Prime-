@@ -1,20 +1,27 @@
-function checkPrime(num){
-let counter=0;
-for (let i=1; i<=num; i++){
-if(num%i == 0){
-  counter++;
+
+function checkPrime(number)
+{
+let factors=0;
+for(let i=1 ; i<=number ;i++)
+{
+if(number%i==0)
+{
+factors++;
 }
 }
-if(counter == 2){
-  return true;
+if(factors==2)
+{
+return true;
 }
-return false;
+retuen false;
+}
+let answer=checkPrime(13);
+if(answer==true)
+{
+console.log("Prime Number");
+}
+else
+{
+console.log("Not Prime");
 }
 
-let ans= checkprime(13);
-
-if(ans == true){
-   console.log("prime")
-}else{
-console.log("Not Prime")
-}
